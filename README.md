@@ -1,4 +1,4 @@
-# Clinical_Outcomes_Tracker# National Referral Coding System for Clinic Appointments
+# National Referral Coding System for Clinic Appointments
 
 ## Overview
 The National Referral Coding System is a Python-based application designed to facilitate the creation, saving, and tracking of clinic appointments. This system is particularly useful for medical facilities and clinics that need an efficient way to manage their appointments and generate invoices.
