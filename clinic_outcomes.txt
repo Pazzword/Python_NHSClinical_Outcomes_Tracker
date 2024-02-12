@@ -1,0 +1,68 @@
+CLINIC OUTCOMES REPORT
+
+PATIENT NUM	APPOINTMENT	TYPE		OUTCOME CODE
+Patient 1	Doctors'	N/A	First Appt	Code 20
+Patient 2	Doctors'	N/A	Follow-up Appt	Code 20
+Patient 3	Procedure	Direct Access	N/A	Code 92
+Patient 4	Procedure	Investigation	N/A	Code 20
+Patient 5	Doctors'	N/A	First Appt	Code 20
+Patient 6	Doctors'	N/A	Follow-up Appt	Code 20
+Patient 7	Procedure	Direct Access	N/A	Code 92
+Patient 8	Procedure	Investigation	N/A	Code 20
+Patient 9	Doctors'	N/A	First Appt	Code 20
+Patient 10	Doctors'	N/A	Follow-up Appt	Code 20
+Patient 11	Procedure	Direct Access	N/A	Code 92
+Patient 12	Procedure	Investigation	N/A	Code 20
+Patient 13	Doctors'	N/A	First Appt	Code 20
+Patient 14	Doctors'	N/A	First Appt	Code 20
+Patient 15	Procedure	Investigation	N/A	Code 20
+Patient 16	Doctors'	N/A	First Appt	Code 20
+Patient 17	Procedure	Direct Access	N/A	Code 92
+Patient 18	Procedure	Direct Access	N/A	Code 92
+Patient 19	Procedure	Investigation	N/A	Code 20
+Patient 20	Doctors'	N/A	First Appt	Code 20
+Patient 21	Doctors'	N/A	First Appt	Code 20
+Patient 22	Procedure	Direct Access	N/A	Code 92
+Patient 23	Procedure	Direct Access	N/A	Code 92
+Patient 24	Doctors'	N/A	First Appt	Code 20
+Patient 25	Procedure	Direct Access	N/A	Code 92
+Patient 26	Doctors'	N/A	First Appt	Code 20
+Patient 27	Procedure	Direct Access	N/A	Code 92
+Patient 28	Procedure	Direct Access	N/A	Code 92
+Patient 29	Doctors'	N/A	Follow-up Appt	Code 20
+Patient 30	Procedure	Investigation	N/A	Code 20
+Patient 31	Procedure	Direct Access	N/A	Code 92
+Patient 32	Doctors'	N/A	First Appt	Code 20
+Patient 33	Procedure	Investigation	N/A	Code 20
+Patient 34	Doctors'	N/A	First Appt	Code 20
+Patient 35	Doctors'	N/A	First Appt	Code 20
+Patient 36	Procedure	Investigation	N/A	Code 20
+Patient 37	Doctors'	N/A	First Appt	Code 20
+Patient 38	Procedure	Investigation	N/A	Code 20
+Patient 39	Procedure	Investigation	N/A	Code 20
+Patient 40	Procedure	Investigation	N/A	Code 20
+Patient 41	Procedure	Investigation	N/A	Code 20
+Patient 42	Procedure	Investigation	N/A	Code 20
+Patient 43	Procedure	Investigation	N/A	Code 20
+Patient 44	Procedure	Investigation	N/A	Code 20
+Patient 45	Procedure	Investigation	N/A	Code 20
+Patient 46	Procedure	Investigation	N/A	Code 20
+Patient 47	Procedure	Investigation	N/A	Code 20
+Patient 48	Procedure	Direct Access	N/A	Code 92
+Patient 49	Procedure	Direct Access	N/A	Code 92
+Patient 50	Procedure	Investigation	N/A	Code 20
+Patient 51	Procedure	Investigation	N/A	Code 20
+Patient 52	Procedure	Investigation	N/A	Code 20
+Patient 53	Procedure	Investigation	N/A	Code 20
+Patient 54	Procedure	Investigation	N/A	Code 20
+Patient 55	Procedure	Investigation	N/A	Code 20
+Patient 56	Procedure	Investigation	N/A	Code 20
+Patient 57	Doctors'	N/A	First Appt	Code 20
+Patient 58	Procedure	Direct Access	N/A	Code 92
+Patient 59	Procedure	Direct Access	N/A	Code 92
+Patient 60	Doctors'	N/A	First Appt	Code 20
+Patient 61	Doctors'	N/A	Follow-up Appt	Code 20
+Patient 62	Procedure	Direct Access	N/A	Code 92
+Patient 63	Procedure	Direct Access	N/A	Code 92
+Patient 64	Doctors'	N/A	First Appt	Code 20
+Patient 65	Procedure	Direct Access	N/A	Code 92
