@@ -27,4 +27,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 - This project was inspired by the need for a simple yet effective system for managing clinic appointments and generating invoices.
-- Special thanks to the developers of Python and the open-source community for their valuable contributions.
+
