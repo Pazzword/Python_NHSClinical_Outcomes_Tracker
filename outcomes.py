@@ -1,9 +1,9 @@
-import reports  # Importing the module containing functions for managing appointments and generating reports
+import reports 
 
 def main():
     while True:
         try:
-            # Prompt the user for their choice in the main menu
+            
             option = input(''' 
                                 MAIN MENU
                 
@@ -16,20 +16,20 @@ def main():
                 Enter your option: ''').lower()
             
             if option == 'w':
-                reports.create_outcomes()  # Call the function to start creating a new outcomes list
+                reports.create_outcomes()  
             elif option =='gr':
-                reports.generate_reports()  # Call the function to generate outcomes report
+                reports.generate_reports() 
             elif option == 'va':
-                reports.view_outcomes()  # Call the function to view outcomes
+                reports.view_outcomes() 
             elif option =='t':
                 reports.view_RTT()  # Call the function to open RTT status codes PDF
 
             elif option == 'q':
-                print("\t\tGoodbuy!!!")  # Print farewell message
-                quit()  # Exit the program
+                print("\t\tGoodbuy!!!")  
+                quit()  
 
         except ValueError:
-            return  # Exit the program in case of ValueError
+            return  
 
 if __name__ == "__main__":
-    main()  # Call the main function when the script is executed
+    main()  
