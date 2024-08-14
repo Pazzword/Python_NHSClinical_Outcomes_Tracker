@@ -2,26 +2,20 @@ import os
 import csv
 import pdfplumber
 
-# Importing custom module
 import appointments
 
 def create_outcomes():
-    # Create an instance of AppointmentManager from the appointments module
     appointment_manager = appointments.AppointmentManager("appointments.csv")
 
-    # Dictionary to map user input to full words
     input_mapping = {"R": "Review", "D": "Doctors'", "P": "Procedure", "Y": "Yes", "N": "No", "DA": "Direct Access", "I": "Investigation", "F": "First Appt", "FU": "Follow-up Appt"}
 
     while True:
-        # Type of outcome
         while True:
-            # Prompt the user for the type of appointment
             outcome1 = input('''
             🟡 Is this appointment with the Doctor (D) or Procedure (P) appointment? ''').upper()
 
-            # Check if the input is valid
             if outcome1 in ["D", "P"]:
-                break  # Exit the loop if the input is valid
+                break 
             else:
                 print('''
             ❌ Invalid input. Please enter 'D' or 'P'.''')
@@ -36,7 +30,7 @@ def create_outcomes():
 
                 # Check if the input is valid
                 if Clinic_Review in ["DA", "I"]:
-                    break  # Exit the loop if the input is valid
+                    break  
                 else:
                     print('''
             ❌ Invalid input. Please enter 'DA' or 'I'.''')
@@ -75,25 +69,21 @@ def create_outcomes():
         # Create an Appointment object
         appointment = appointments.Appointment(input_mapping.get(outcome1, ""), input_mapping.get(Clinic_Review, "") if outcome1 == "P" else "", input_mapping.get(Clinic_Review, "") if outcome1 == "D" else "", code if 'code' in locals() else "")
 
-        # Write user inputs to CSV
         appointment_manager.write_to_csv(appointment)
 
-        # Ask the user if they want to start over
         start_over = input('''
             ⬜️ Do you want to go to the next outcome? Type 'Y' for Yes, 'N' for No: ''').upper()
         if start_over != 'Y':
             break
 
 def generate_reports():
-    # Read data from appointments.csv
     appointments_data = []
     with open("appointments.csv", newline='') as csv_file:
         csv_reader = csv.reader(csv_file)
-        next(csv_reader)  # Skip the header row
+        next(csv_reader) 
         for row in csv_reader:
             appointments_data.append(row)
 
-    # Process data and generate the report
     report_lines = []
     report_lines.append("CLINIC OUTCOMES REPORT\n\n")
     report_lines.append("PATIENT NUM\tAPPOINTMENT\tTYPE\t\tOUTCOME CODE\n")
@@ -104,7 +94,6 @@ def generate_reports():
         report_lines.append("\t".join(appointment_with_patient) + "\n")
         patient_number += 1
 
-    # Save the report to clinic_outcomes.txt
     with open("clinic_outcomes.txt", "w") as report_file:
         report_file.writelines(report_lines)
 
@@ -114,16 +103,12 @@ def view_outcomes():
     print("\n--- CLINIC OUTCOMES ---\n")
     try:
         with open("clinic_outcomes.txt", "r") as file:
-            # Read the header
             header = next(file).strip().split("\t")
 
-            # Print the header
             print("\t".join(header))
 
-            # Print the outcomes
             for line in file:
                 outcome = line.strip().split("\t")
-                # Filter out "N/A" values
                 filtered_outcome = [field for field in outcome if field != "N/A"]
                 print("\t".join(filtered_outcome))
     except FileNotFoundError:
